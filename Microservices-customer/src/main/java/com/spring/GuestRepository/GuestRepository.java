@@ -10,4 +10,5 @@ public interface GuestRepository extends JpaRepository<Guest,Integer>{
 	
 	public List<Guest> findByPgid(Integer pgid);
 
+	//public List<Guest> findGByName(String gname);
 }
