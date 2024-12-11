@@ -1,4 +1,4 @@
-package com.spring.GuestController;
+ package com.spring.GuestController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,8 +17,7 @@ public class GuestController {
 	@GetMapping("/getguests")
 	public ResponseEntity<String> getGeust(@PathVariable int id)
 	{
-	
-             grepository.getReferenceById(id);
+	 grepository.getReferenceById(id);
 	return new ResponseEntity<String>("hello", org.springframework.http.HttpStatus.OK);
 	}
 
